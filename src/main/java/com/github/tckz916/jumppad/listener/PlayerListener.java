@@ -1,7 +1,6 @@
 package com.github.tckz916.jumppad.listener;
 
 import com.github.tckz916.jumppad.JumpPad;
-import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.Sound;
 import org.bukkit.block.Block;
@@ -49,6 +48,8 @@ public class PlayerListener implements Listener {
         double location_y = isDouble(lines.get(2)) ? Double.parseDouble(lines.get(2)) : 1.0;
         player.setVelocity(player.getLocation().getDirection().multiply(multiply).setY(location_y));
         player.playSound(player.getLocation(), Sound.GHAST_FIREBALL, 2.0F, 1.0F);
+
+
     }
 
 
@@ -60,4 +61,5 @@ public class PlayerListener implements Listener {
         }
         return true;
     }
+
 }
