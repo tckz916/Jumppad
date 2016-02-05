@@ -34,7 +34,6 @@ public class PlayerListener implements Listener {
         Player player = event.getPlayer();
         Block block = event.getTo().getBlock().getRelative(BlockFace.DOWN, 2);
         if (!(block.getType() == Material.SIGN_POST || block.getType() == Material.WALL_SIGN)) {
-            player.sendMessage(block.toString());
             return;
         }
 
