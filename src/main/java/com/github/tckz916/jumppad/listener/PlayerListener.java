@@ -46,7 +46,7 @@ public class PlayerListener implements Listener {
         double multiply = isDouble(lines.get(1)) ? Double.parseDouble(lines.get(1)) : 3.0;
         double location_y = isDouble(lines.get(2)) ? Double.parseDouble(lines.get(2)) : 1.0;
         player.setVelocity(player.getLocation().getDirection().multiply(multiply).setY(location_y));
-        player.playSound(player.getLocation(), Sound.GHAST_FIREBALL, 2.0F, 1.0F);
+        player.playSound(player.getLocation(), Sound.ZOMBIE_INFECT, 4.0F, 2.0F);
 
 
     }
